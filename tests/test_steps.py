@@ -52,6 +52,9 @@ def should_see_issue_with_number(number):
     s(by.partial_text("#" + number)).should(be.visible)
 
 
+def test_no_labels():
+    pass
+
 def test_dynamic_labels():
     allure.dynamic.tag('web')
     allure.dynamic.severity(Severity.BLOCKER)
